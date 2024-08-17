@@ -22,7 +22,7 @@ jobs:
       - name: Run clippy
         run: cargo clippy --all-features
       - name: Run rustfmt
-        run: cargo fmt --all-features
+        run: cargo fmt --all
 
   code-coverage:
     runs-on: ubuntu-latest
