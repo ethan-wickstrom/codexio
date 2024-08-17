@@ -1,10 +1,31 @@
 <div align="center">
 
-<h1>📋 Codexio</h1> 
+<div align="center" style="flex-direction: column; align-items: center; justify-content: center; gap: 1rem;">
+
+<h1>📋 Codexio</h1>
 
 <h4>A lightning-fast Rust-based CLI tool that distills any codebase into a powerful LLM prompt, no matter the size.</h3>
 
-<img src=".assets/logo.webp" alt="Codexio Demo" width="600">
+<p align="center">A project by <a href="https://ethan-wickstrom.com">Ethan Wickstrom</a></p>
+
+</div>
+
+<p align="center">
+  <a href="https://github.com/ethan-wickstrom/codexio/releases">
+    <img src="https://img.shields.io/github/v/release/ethan-wickstrom/codexio?style=flat-square" alt="GitHub release (latest by date)" />
+  </a>
+  <a href="https://github.com/ethan-wickstrom/codexio/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/ethan-wickstrom/codexio?style=flat-square" alt="License" />
+  </a>
+  <a href="https://github.com/ethan-wickstrom/codexio/issues">
+    <img src="https://img.shields.io/github/issues/ethan-wickstrom/codexio?style=flat-square" alt="GitHub issues" />
+  </a>
+  <a href="https://github.com/ethan-wickstrom/codexio/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/ethan-wickstrom/codexio?style=flat-square" alt="GitHub contributors" />
+  </a>
+</p>
+
+<img src=".assets/codexio-logo.jpg" alt="Codexio Demo" width="100%">
 
 </div>
 
