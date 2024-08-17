@@ -33,7 +33,7 @@ pub fn get_git_diff(repo_path: &Path) -> Result<String> {
         diff_text.extend_from_slice(line.content());
         true
     })
-    .context("Failed to print diff")?;
+        .context("Failed to print diff")?;
 
     info!("Generated git diff successfully");
     Ok(String::from_utf8_lossy(&diff_text).into_owned())
@@ -83,7 +83,7 @@ pub fn get_git_diff_between_branches(
         diff_text.extend_from_slice(line.content());
         true
     })
-    .context("Failed to print diff")?;
+        .context("Failed to print diff")?;
 
     info!("Generated git diff between branches successfully");
     Ok(String::from_utf8_lossy(&diff_text).into_owned())

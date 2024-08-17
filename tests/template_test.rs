@@ -1,4 +1,4 @@
-use code2prompt::template::{extract_undefined_variables, handlebars_setup, render_template};
+use codexio::template::{extract_undefined_variables, handlebars_setup, render_template};
 
 #[cfg(test)]
 mod tests {

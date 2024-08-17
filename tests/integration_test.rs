@@ -90,7 +90,7 @@ mod tests {
 
         fn command(&self) -> Command {
             let mut cmd =
-                Command::cargo_bin("code2prompt").expect("Failed to find code2prompt binary");
+                Command::cargo_bin("codexio").expect("Failed to find codexio binary");
             cmd.arg(&self.dir.path().to_str().unwrap())
                 .arg("--output")
                 .arg(&self.output_file)

@@ -1,4 +1,4 @@
-use code2prompt::filter::should_include_file;
+use codexio::filter::should_include_file;
 use colored::*;
 use once_cell::sync::Lazy;
 use std::fs::{self, File};

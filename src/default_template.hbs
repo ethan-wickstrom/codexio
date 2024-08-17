@@ -1,16 +1,25 @@
-Project Path: {{ absolute_code_path }}
+## Project Path
 
-Source Tree:
+**{{ absolute_code_path }}**
 
-```
+## Source Tree
+
+```plaintext
 {{ source_tree }}
 ```
 
+## Files
+
 {{#each files}}
 {{#if code}}
-`{{path}}`:
 
-{{code}}
+### `{{ path }}`
+
+---
+
+{{ code }}
+
+---
 
 {{/if}}
 {{/each}}
