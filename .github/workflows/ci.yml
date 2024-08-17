@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4.1.7
+      - name: Run tests
+        run: cargo test --all-features
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4.1.7
+      - name: Run clippy
+        run: cargo clippy --all-features
+      - name: Run rustfmt
+        run: cargo fmt --all-features
+
+  code-coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4.1.7
+      - name: Run code coverage analysis
+        run: cargo test --all-features --no-run
+      - name: Upload code coverage report
+        uses: codecov/codecov-action@v4.5.0
+        with:
+          file: target/cov/report.json
+
+  mutation-testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4.1.7
+      - name: Run mutation tests
+        run: cargo mutagen --all-features
