@@ -161,23 +161,6 @@ For a full list of options with detailed descriptions, run:
 codexio --help
 ```
 
-## Contributing
-
-We welcome contributions to Codexio! Here's how you can help:
-
-1. Fork the repository on GitHub.
-2. Create a new branch for your feature or bug fix.
-3. Write your code, ensuring it follows the project's coding standards.
-4. Add or update tests as necessary.
-5. Commit your changes and push to your fork.
-6. Submit a pull request with a clear description of your changes.
-
-Please ensure your code adheres to the following guidelines:
-- Follow the Rust style guide.
-- Write clear, concise commit messages.
-- Include unit tests for new features or bug fixes.
-- Update documentation as necessary.
-
 ## Customization
 
 ### Custom Templates
@@ -218,6 +201,23 @@ Save this template as `custom_template.hbs` and use it with Codexio:
 `codexio /path/to/your/codebase --template=custom_template.hbs`
 
 For more information on Handlebars templates, refer to the [official documentation](https://handlebarsjs.com/guide/).
+
+## Contributing
+
+We welcome contributions to Codexio! Here's how you can help:
+
+1. Fork the repository on GitHub.
+2. Create a new branch for your feature or bug fix.
+3. Write your code, ensuring it follows the project's coding standards.
+4. Add or update tests as necessary.
+5. Commit your changes and push to your fork.
+6. Submit a pull request with a clear description of your changes.
+
+Please ensure your code adheres to the following guidelines:
+- Follow the Rust style guide.
+- Write clear, concise commit messages.
+- Include unit tests for new features or bug fixes.
+- Update documentation as necessary.
 
 ## Testing
 
